@@ -1,0 +1,68 @@
+About Java:
+      - used for building desktop, mobile, and web applications
+      - platform independent: once bytecode generated it can run on any platform using that platform specific jvm
+      - only supports internal pointer, manually we can't write
+      - built in thread support
+      - supports documentation comment
+      - doesn't support call by reference, only support call by value
+      - doesn't support operator overloading
+ 
+
+Java Features:
+      -Simple and easy to learn
+      -Secure bcz of Java Execution Environment
+      -Portable: Bytecodes executed using JVM on mac, linux, windows
+
+
+Java Program Compilation:
+      java file -> compile using javac -> class file(bytecode)
+ 
+
+Java Program Execution:
+      classloader loads class file -> bytecode verifier verifies bytecode and restrict illegal access to other parts of the system -> interpreter reads bytecode instruction and execute them line by line -> Program output shown on concerned h/w
+ 
+
+JDK: Java Development Kit- kit to develop and execute java programs
+    -> Components:
+        i) JRE (Java Runtime Environment)/ Java RTE: provides minimum requirement for executing java programs.
+            ->Components:
+                a) JVM (Java Virtual Machine) : it abstract virtual machine, not existing physically, provides secure runtime environment for executing java bytecodes.
+                                                it invokes main() method present in java program.
+                b) core classes and supporting files
+        ii) Development tools: javac (compiler), javadoc (java document generator), etc.
+
+                    
+Single line comment:
+    //this is single line comment
+
+
+/*
+ This is 
+ multi-line comment
+ in java
+*/
+
+We can take user input in java using Scanner class in following way:
+
+    //importing Scanner class in our file at the top
+    import java.util.Scanner;
+
+    //writing the follwoing codes in main() method:
+
+        //creating new object (sc) of Scanner class
+        Scanner sc = new Scanner(System.in);
+
+        //Getting string input
+        String name = sc.nextLine();
+
+        //Getting integer input
+        int age = sc.nextInt();
+
+        //Getting float input
+        float weight = sc.nextFloat();
+
+
+
+// Few Info about class
+    // Every Java program can have at most 1 public class that contains main method (such class is considered as main class)
+    // main class name must match with the java file name containing that class
